@@ -23,7 +23,7 @@ git clone https://github.com/pedrohnsc/desafio-ci-t.git && cd desafio-ci-t
 **2** - Instale as dependências necessárias para rodar os testes:
 
 ```sh
-npm ci
+npm install
 ```
 
 **3** - E finalmente, execute os testes:
