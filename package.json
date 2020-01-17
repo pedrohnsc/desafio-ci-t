@@ -1,0 +1,25 @@
+{
+  "name": "desafio-ci-t",
+  "version": "1.0.0",
+  "description": "Test automation for QA Position",
+  "license": "MIT",
+  "author": "Pedro Nascimento <pedrohnsc@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedrohnsc/desafio-ci-t.git"
+  },
+  "scripts": {
+    "test": "npm run test:api & npm run test:e2e",
+    "pretest:e2e": "webdriver-manager update --gecko false",
+    "test:e2e": "protractor test/e2e/protractor.conf.js",
+    "test:api": "jest test/api"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "frisby": "^2.1.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jest": "^24.9.0",
+    "protractor": "5.4.2",
+    "protractor-helper": "4.0.5"
+  }
+}
